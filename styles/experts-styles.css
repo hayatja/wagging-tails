@@ -1,0 +1,13 @@
+.card1 {
+    min-height: 200px;
+    border-color: #82AD56;
+    border-width: 2px;
+    background-color: #EBF2E6;
+}
+
+.card2 {
+    min-height: 200px;
+    border-color: #82AD56;
+    border-width: 2px;
+    background-color: #cad6c2;
+}

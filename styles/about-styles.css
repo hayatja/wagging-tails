@@ -1,0 +1,18 @@
+.map-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.address {
+    flex: 1;
+    margin-bottom: -10px;
+}
+
+.map {
+    flex: 1;
+}
+
+iframe {
+    margin-top: 0;
+    padding-top: 0;
+}

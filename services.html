@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wagging Tails</title>
+    <link rel="icon" href="res/icon.ico" type="image/x-icon">
+    <!-- Sourced from https://fonts.google.com/specimen/Inika -->
+    <link href='https://fonts.googleapis.com/css?family=Inika' rel='stylesheet'>
+    <!-- Sourced from getbootstrap.com -->
+    <link rel="stylesheet" href="styles/external/bootstrap.rtl.css" />
+    <link rel="stylesheet" href="styles/index-styles.css" />
+    <link rel="stylesheet" href="styles/services-styles.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <a class="navbar-brand" href="./index.html">
+            <h1>WAGGING TAILS</h1>
+            <h5 class="text-muted">PREMIUM VETERINARY SERVICES</h5>
+        </a>
+        <div id="navbarNav">
+            <ul class="nav navbar-right">
+                <li class="nav-item">
+                    <a class="nav-link bold" href="./services.html"><u>SERVICES</u></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bold" href="./experts.html">EXPERTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bold" href="./about.html">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bold" href="./virtual.html">VIRTUAL</a>
+                </li>
+                <li class="nav-item pe-2">
+                    <a class="btn book-now-btn bold" href="./book.html"><b>BOOK NOW</b></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="justify-content-center align-items-center">
+        <div class="bg-white rounded p-4 text-center m-5 mb-4">
+            <div>
+                <h3 class="text-end mb-5 mt-3 bold">Our Services</h3>
+            </div>
+
+            <div>
+                <div class="d-flex justify-content-between mb-3">
+                    <button class="service-arrow service-arrow-left" id="wellness-prev">&lt;</button>
+                    <h4>Wellness</h4>
+                    <button class="service-arrow service-arrow-right" id="wellness-next">&gt;</button>
+                </div>
+                <div class="row service-row" id="wellness-row">
+                    <div class="d-flex card-deck">
+                        <div class="card service-card text-end p-3">
+                            <div class="bold">Diet and Nutrition</div>
+                            <div class="italics">(starting at $59)</div>
+                            <div>---</div>
+                            <p class="small-text">The best diet and nutrition advice for your loved ones!</p>
+                        </div>
+                        <div class="card service-card text-end p-3">
+                            <div class="bold">Dentistry</div>
+                            <div class="italics">(starting at $99)</div>
+                            <div>---</div>
+                            <div class="small-text">Best animal teeth care!</div>
+                        </div>
+                        <div class="card service-card text-end p-3">
+                            <div class="bold">Vaccinations</div>
+                            <div class="italics">(starting at $49)</div>
+                            <div>---</div>
+                            <div class="small-text">Keep your vaccinations updated!</div>
+                        </div>
+                        <div class="card service-card text-end p-3">
+                            <div class="bold">Preventative Care</div>
+                            <div class="italics">(starting at $109)</div>
+                            <div>---</div>
+                            <div class="small-text">Catch illnesses before they develop!</div>
+                        </div>
+                        <div class="card service-card text-end p-3">
+                            <div class="bold">Microchipping</div>
+                            <div class="italics">(starting at $159)</div>
+                            <div>---</div>
+                            <div class="small-text">Always know where your furry friend is!</div>
+                        </div>
+                        <div class="card service-card text-end p-3">
+                            <div class="bold">Spray and Neuter</div>
+                            <div class="italics">(starting at $79)</div>
+                            <div>---</div>
+                            <div class="small-text">Safe and painless spraying and neutering!</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between mb-3 mt-5">
+                    <button class="service-arrow service-arrow-left" id="diagnosis-prev">&lt;</button>
+                    <h4>Diagnosis</h4>
+                    <button class="service-arrow service-arrow-right" id="diagnosis-next">&gt;</button>
+                </div>
+                <div class="row service-row" id="diagnosis-row">
+                    <div class="d-flex card-deck">
+                        <div class="card service-card text-end p-3">
+                            <div class="bold">Radiography</div>
+                            <div class="italics">(starting at $289)</div>
+                            <div>---</div>
+                            <p class="small-text">Premium imaging services with radiography!</p>
+                        </div>
+                        <div class="card service-card text-end p-3">
+                            <div class="bold">Allergies</div>
+                            <div class="italics">(starting at $199)</div>
+                            <div>---</div>
+                            <p class="small-text">Premium imaging services with radiography!</p>
+                        </div>
+                        <div class="card service-card text-end p-3">
+                            <div class="bold">Ultrasound</div>
+                            <div class="italics">(starting at $239)</div>
+                            <div>---</div>
+                            <p class="small-text">Premium imaging services with radiography!</p>
+                        </div>
+                        <div class="card service-card text-end p-3">
+                            <div class="bold">Oncology</div>
+                            <div class="italics">(starting at $599)</div>
+                            <div>---</div>
+                            <p class="small-text">Premium imaging services with radiography!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between mb-3 mt-5">
+                    <button class="service-arrow service-arrow-left" id="hospitality-prev">&lt;</button>
+                    <h4>Hospitality</h4>
+                    <button class="service-arrow service-arrow-right" id="hospitality-next">&gt;</button>
+                </div>
+                <div class="row service-row" id="hospitality-row">
+                    <div class="d-flex card-deck">
+                        <div class="card service-card text-end p-3">
+                            <div class="bold">Boarding</div>
+                            <div class="italics">(starting at $29)</div>
+                            <div>---</div>
+                            <p class="small-text">Give your furry friends the vacation they deserve!</p>
+                        </div>
+                        <div class="card service-card text-end p-3">
+                            <div class="bold">Grooming</div>
+                            <div class="italics">(starting at $19)</div>
+                            <div>---</div>
+                            <p class="small-text">Fresh cuts for your loved ones!</p>
+                        </div>
+                        <div class="card service-card text-end p-3">
+                            <div class="bold">Daycare</div>
+                            <div class="italics">(starting at $25)</div>
+                            <div>---</div>
+                            <p class="small-text">We take care of your furry friends while you are away!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="text-center mt-3 mb-5 bold">
+            Please inquire for any special services not listed!
+        </div>
+
+        <script src="scripts/services-scripts.js"></script>
+    </main>
+
+    <footer class="bg-white rounded p-4 m-5">
+        <div class="row">
+            <div class="col text-end">
+                <h5>WAGGING TAILS</h5>
+                <h6 class="text-muted">PREMIUM VETERINARY SERVICES</h6>
+                <p class="mt-4 mb-0">© Copyright 2024</p>
+            </div>
+            <div class="col text-end">
+                <p class="mb-4">1234 Street St, Ottawa, Ontario, Canada</p>
+                <p class="mb-1">+1 (999) 999-9999</p>
+                <p class="mb-0">hello@waggingtailspremium.ca</p>
+            </div>
+            <div class="col text-start row">
+                <a href="./about.html">Contact Us</a>
+                <a>Terms and Conditions</a>
+                <a>Privacy Policy</a>
+                <a>FAQ</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

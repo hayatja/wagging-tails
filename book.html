@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wagging Tails</title>
+    <link rel="icon" href="res/icon.ico" type="image/x-icon">
+    <!-- Sourced from https://fonts.google.com/specimen/Inika -->
+    <link href='https://fonts.googleapis.com/css?family=Inika' rel='stylesheet'>
+    <!-- Sourced from getbootstrap.com -->
+    <link rel="stylesheet" href="styles/external/bootstrap.rtl.css" />
+    <link rel="stylesheet" href="styles/external/mdtimepicker.css" />
+    <link rel="stylesheet" href="styles/index-styles.css" />
+    <link rel="stylesheet" href="styles/book-styles.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a class="navbar-brand" href="./index.html">
+            <h1>WAGGING TAILS</h1>
+            <h5 class="text-muted">PREMIUM VETERINARY SERVICES</h5>
+        </a>
+        <div id="navbarNav">
+            <ul class="nav navbar-right">
+                <li class="nav-item">
+                    <a class="nav-link bold" href="./services.html">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bold" href="./experts.html">EXPERTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bold" href="./about.html">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bold" href="./virtual.html">VIRTUAL</a>
+                </li>
+                <li class="nav-item pe-2">
+                    <a class="btn book-now-btn bold" href="./book.html"><b>BOOK NOW</b></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="justify-content-center align-items-center">
+        <div class="bg-white rounded p-4 text-center m-5">
+            <div>
+                <h3 class="text-end mb-2 mt-3 bold">Book An Appointment</h3>
+            </div>
+
+            <div id="step-1" class="mt-5">
+                <div class="steps-bar">
+                    <div class="step active">Step 1: Select Service</div>
+                    <div class="step">Step 2: Personal Details</div>
+                    <div class="step">Step 3: Confirmation</div>
+                </div>
+                <div class="main-content">
+                    <form id="appointment-form">
+                        <div class="form-group row">
+                            <label for="serviceSelect" class="col-md-4 col-form-label text-start">Select Service</label>
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <select class="form-control" id="serviceSelect">
+                                        <optgroup label="Wellness Services">
+                                            <option>Diet and Nutrition</option>
+                                            <option>Dentistry</option>
+                                            <option>Vaccinations</option>
+                                            <option>Preventative Care</option>
+                                            <option>Microchipping</option>
+                                            <option>Spray and Neuter</option>
+                                        </optgroup>
+                                        <optgroup label="Diagnosis Services">
+                                            <option>Radiography</option>
+                                            <option>Allergies</option>
+                                            <option>Ultrasound</option>
+                                            <option>Oncology</option>
+                                        </optgroup>
+                                        <optgroup label="Hospitality Services">
+                                            <option>Boarding</option>
+                                            <option>Grooming</option>
+                                            <option>Daycare</option>
+                                        </optgroup>
+                                    </select>
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="fa fa-caret-down"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="doctorSelect" class="col-md-4 col-form-label text-start">Select Doctor</label>
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <select class="form-control" id="doctorSelect">
+                                        <option>Dr. Dog Doctor</option>
+                                        <option>Dr. Cat Doctor</option>
+                                        <option>Dr. Bird Doctor</option>
+                                        <option>Dr. Lion Doctor</option>
+                                        <option>Dr. Fish Doctor</option>
+                                        <option>Dr. Fox Doctor</option>
+                                        <option>Dr. Rabbit Doctor</option>
+                                        <option>Dr. Moose Doctor</option>
+                                        <option>Dr. Deer Doctor</option>
+                                    </select>
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="fa fa-caret-down"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="dateSelect" class="col-md-4 col-form-label text-start">Select Date</label>
+                            <div class="col-md-6">
+                                <div class="input-group date">
+                                    <input type="text" class="form-control" id="dateSelect">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="timeSelect" class="col-md-4 col-form-label text-start">Select Time</label>
+                            <div class="col-md-6">
+                                <div class="input-group date">
+                                    <input type="text" class="form-control" id="timeSelect">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="fa fa-clock-o"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="isVirtual">
+                            <label class="custom-control-label" for="isVirtual">Virtual Appointment</label>
+                        </div>
+                        <button type="button" class="btn continue-btn mt-3" id="continue-1">Continue</button>
+                    </form>
+                </div>
+            </div>
+
+            <div id="step-2" class="mt-5">
+                <div class="steps-bar">
+                    <div class="step">Step 1: Select Service</div>
+                    <div class="step active">Step 2: Personal Details</div>
+                    <div class="step">Step 3: Confirmation</div>
+                </div>
+                <div class="main-content">
+                    <form id="appointment-form-2">
+                        <div class="text-end mb-3 w-100 text-muted">* required</div>
+                        <div class="form-group row">
+                            <label for="humanNameField" class="col-md-4 col-form-label text-start">Human's Name
+                                *</label>
+                            <div class="col-md-6">
+                                <div class="input-group date">
+                                    <input type="text" class="form-control" id="humanNameField" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="emailField" class="col-md-4 col-form-label text-start">Email Address *</label>
+                            <div class="col-md-6">
+                                <div class="input-group date">
+                                    <input type="text" class="form-control" id="emailField" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="phoneField" class="col-md-4 col-form-label text-start">Phone Number</label>
+                            <div class="col-md-6">
+                                <div class="input-group date">
+                                    <input type="text" class="form-control" id="phoneField">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-5">
+                            <h5>Introduce your furry friends to us!</h5>
+                        </div>
+
+                        <div class="mt-4" id="animals-subform">
+                            <div class="form-group row">
+                                <label for="animalName1" class="col-md-3 col-form-label text-start">Animal Name
+                                    *</label>
+                                <div class="col-md-3">
+                                    <div class="input-group date">
+                                        <input type="text" class="form-control" id="animalName1">
+                                    </div>
+                                </div>
+
+                                <label for="animalBreed1" class="col-md-1 col-form-label text-start">Breed *</label>
+                                <div class="col-md-3">
+                                    <div class="input-group date">
+                                        <input type="text" class="form-control" id="animalBreed1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn add-animal-btn" id="add-animal-btn">Add A New Animal</button>
+                            <button class="btn del-animal-btn" id="del-animal-btn">Remove Last Animal</button>
+                        </div>
+                        <div>
+                            <button type="button" class="btn continue-btn mt-5" id="continue-2">Continue</button>
+                        </div>
+                        <div>
+                            <button type="button" class="btn back-btn mt-2" id="back-2">go back to service
+                                options</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div id="step-3" class="mt-5">
+                <div class="steps-bar">
+                    <div class="step">Step 1: Select Service</div>
+                    <div class="step">Step 2: Personal Details</div>
+                    <div class="step active">Step 3: Confirmation</div>
+                </div>
+                <div class="main-content text-end">
+                    <div class="small-text">Confirmation Number:</div>
+                    <h1 class="mb-5">#346583</h1>
+
+                    <div id="output"></div>
+
+                    <div class="mb-4">We look forward to seeing you :)</div>
+                    <div class="bold">For any changes or cancellation, please email or call us directly.</div>
+                </div>
+            </div>
+
+            <script src="scripts/external/jquery-3.7.1.min.js"></script>
+            <script src="scripts/external/bootstrap.js"></script>
+            <script src="scripts/external/mdtimepicker.js"></script>
+            <script src="scripts/external/bootstrap-datepicker.min.js"></script>
+
+            <script src="scripts/book-scripts.js"></script>
+
+    </main>
+
+    <footer class="bg-white rounded p-4 m-5">
+        <div class="row">
+            <div class="col text-end">
+                <h5>WAGGING TAILS</h5>
+                <h6 class="text-muted">PREMIUM VETERINARY SERVICES</h6>
+                <p class="mt-4 mb-0">© Copyright 2024</p>
+            </div>
+            <div class="col text-end">
+                <p class="mb-4">1234 Street St, Ottawa, Ontario, Canada</p>
+                <p class="mb-1">+1 (999) 999-9999</p>
+                <p class="mb-0">hello@waggingtailspremium.ca</p>
+            </div>
+            <div class="col text-start row">
+                <a href="./about.html">Contact Us</a>
+                <a>Terms and Conditions</a>
+                <a>Privacy Policy</a>
+                <a>FAQ</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

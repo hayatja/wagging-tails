@@ -1,0 +1,38 @@
+.service-row {
+    position: relative;
+    overflow: scroll;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.service-card {
+    display: inline-block;
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 150px;
+    max-height: 150px;
+    margin-right: 20px;
+    vertical-align: top;
+    background-color: #e1e9db;
+    border-color: #5A7D37;
+    border-width: 2px;
+}
+
+.service-arrow {
+    /* position: absolute; */
+    /* top: 50%; */
+    transform: translateY(-10%);
+    background-color: #5A7D37;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.small-text {
+    font-size: 14px;
+    text-wrap: wrap;
+}

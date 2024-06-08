@@ -1,0 +1,112 @@
+body {
+    background-color: #D4DECB;
+    font-family: "Inika", "Tahoma";
+}
+
+.navbar {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 80px;
+}
+
+.navbar-brand h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.navbar-brand h5 {
+    margin: 0;
+    font-size: 0.8em;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.italics {
+    font-style: italic;
+}
+
+.navbar-nav>li {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.nav-link {
+    color: black;
+}
+
+.img-80 {
+    width: 80%;
+}
+
+.book-btn {
+    background-color: #444F3B;
+    border-color: #141A10;
+    border-width: 2px;
+    color: white;
+}
+
+.book-btn:hover {
+    background-color: #141A10;
+    border-color: #141A10;
+    color: white;
+}
+
+.mini-service-btn {
+    background-color: #D4DECB;
+    border-color: #5A7D37;
+    border-width: 2px;
+    width: 22%;
+    height: 100px;
+    cursor: crosshair;
+}
+
+.mini-service-btn:hover {
+    background-color: #D4DECB;
+    border-color: #5A7D37;
+    border-width: 2px;
+    cursor: crosshair;
+}
+
+.mini-service-btn-last {
+    background-color: #FFF;
+    border-color: #5A7D37;
+    border-width: 2px;
+    width: 22%;
+    height: 100px;
+}
+
+.mini-service-btn-last:hover {
+    background-color: #FFF;
+    border-color: #5A7D37;
+    border-width: 2px;
+}
+
+.book-now-btn {
+    background-color: #82AD56;
+    color: white;
+}
+
+.book-now-btn:hover {
+    background-color: #141A10;
+    color: white;
+}
+
+a {
+    /* text-decoration: none; */
+    color: #444F3B;
+}
+
+h6 {
+    font-size: 0.8em;
+}
+
+main {
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+footer {
+    margin-bottom: 2em;
+}

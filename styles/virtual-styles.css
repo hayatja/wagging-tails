@@ -1,0 +1,22 @@
+.video-chat-box {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-btn {
+    background-color: #82AD56;
+    color: white;
+    min-width: 200px;
+}
+
+.submit-btn:hover {
+    background-color: #444F3B;
+    color: white;
+}
+
+.invalid-input {
+    color: red;
+    display: none;
+}
